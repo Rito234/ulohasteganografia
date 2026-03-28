@@ -21,7 +21,6 @@ def extract_message(pic):
     return bin_to_sprava(bin_message)
 
 if __name__ == "__main__":
-    # Načítanie zakódovaného obrázka
     skryty_obr = Image.open("skryta_sprava.png")
     vytiahnuta_sprava = extract_message(skryty_obr)
     print("Vytiahnutá správa:", vytiahnuta_sprava)
